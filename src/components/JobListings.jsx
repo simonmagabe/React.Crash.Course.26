@@ -8,7 +8,7 @@ const [loading, setLoading] = useState(true)
 	
 	useEffect(() => {
 		const fetchJobs = async () => {
-			const apiUrl = 'http://localhost:3001/jobs'
+			const apiUrl = '/api/jobs'
 			try {
 				const response = await fetch(apiUrl)
 				const data = await response.json()
